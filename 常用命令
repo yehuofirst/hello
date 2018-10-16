@@ -1,0 +1,1 @@
+find -type f -name "upload_main_config.py" | xargs sed 's#zhida#lizhida#g' -i
