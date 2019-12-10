@@ -1,0 +1,48 @@
+/home/wallet/bitcoin/bin/bitcoin-cli -datadir=/home/Wallet/bitcoin/data/  encryptwallet
+
+./litecoin-cli -conf=/home/wallet/litecoin-0.16.3/config/ltc.conf  encryptwallet
+./litecoind -datadir=/home/wallet/litecoin-0.16.3/data/ -conf=/home/wallet/litecoin-0.16.3/config/ltc.conf -daemon 
+./litecoind -conf=/home/wallet/litecoin-0.16.3/config/ltc.conf -datadir=/home/wallet/litecoin-0.16.3/data/ -daemon
+
+./litecoin-cli -datadir=/home/wallet/litecoin-0.16.3/data/ -conf=/home/wallet/litecoin-0.16.3/config/ltc.conf walletpassphrase "one12345678" 6000000
+
+
+
+192.168.1.211:22  mongo1 :123456
+192.168.1.212:22  mango2 :123456
+192.168.1.213:22  mongo3 :123456
+
+redis-benchmark -h localhost -p 6379 -c 100 -n 100000
+
+
+
+BCH:38332-38333
+/home/wallet/bitcoin-abc-0.19.0/bin/bitcoind --datadir=/home/wallet/bitcoin-abc-0.19.0/data/ --daemon
+/home/wallet/bitcoin-abc-0.19.0/bin/bitcoin-cli --datadir=/home/wallet/bitcoin-abc-0.19.0/data/ -conf=/home/wallet/bitcoin-abc-0.19.0/data/bitcoin.conf
+/home/wallet/bitcoin-abc-0.19.0/bin/bitcoin-cli --datadir=/home/wallet/bitcoin-abc-0.19.0/data/  walletpassphrase "jason@12345678" 6000000
+
+DASH:28332-28333
+/home/wallet/dashcore-0.13.1/bin/dashd --datadir=/home/wallet/dashcore-0.13.1/data/ --daemon
+/home/wallet/dashcore-0.13.1/bin/dash-cli --datadir=/home/wallet/dashcore-0.13.1/data/ getblockcount
+
+USDT:48332-48333
+/home/wallet/omnicore-0.4.0/bin/omnicored -conf=/home/wallet/omnicore-0.4.0/config/omnicore.conf  -datadir=/home/wallet/omnicore-0.4.0/data  -daemon
+/home/wallet/omnicore-0.4.0/bin/omnicore-cli -conf=/home/wallet/omnicore-0.4.0/config/omnicore.conf  getblockcount
+
+LTC:9332-9333
+/home/wallet/litecoin-0.16.3/bin/litecoind --datadir=/home/wallet/litecoin-0.16.3/data/ --daemon
+/home/wallet/litecoin-0.16.3/bin/litecoin-cli --datadir=/home/wallet/litecoin-0.16.3/data/ -conf=/home/wallet/litecoin-0.16.3/config/litecoin.conf getblockcount
+
+BTC:8332-8333
+/home/wallet/bitcoin-0.17.1/bin/bitcoind --datadir=/home/wallet/bitcoin-0.17.1/data/ --daemon
+/home/wallet/bitcoin-0.17.1/bin/bitcoin-cli --datadir=/home/wallet/bitcoin-0.17.1/data/ getblockcount
+
+
+nohup /home/wallet/geth-1.8.23/geth --datadir /home/wallet/geth-1.8.23/data/  --rpc --rpcaddr 172.21.22.40 --rpcport "8545" --rpcapi db,eth,net,web3,personal,miner,admin,debug &
+
+cd geth-1.8.23/
+export LD_LIBRARY_PATH=/opt/glibc-2.14/lib:$LD_LIBRARY_PATH
+/home/wallet/geth-1.8.23/geth attach ./data/geth.ipc
+
+
+geth --rpc --rpcaddr 172.21.22.40 --rpcport "8545"

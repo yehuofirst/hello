@@ -1,0 +1,28 @@
+﻿ {
+    "txid": "5e6032ef8ee8d32e19a0af65c6535e3fcb1f94ffcdfaf1ff04e63d4e9938cf21",
+    "vout": 1
+  }, 
+
+  ./omnicore-cli -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf  lockunspent true "[{\"txid\":\"5e6032ef8ee8d32e19a0af65c6535e3fcb1f94ffcdfaf1ff04e63d4e9938cf21\",\"vout\":1}]"
+  
+  
+  ./omnicore-cli -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf listlockunspent
+  如果listlockunspent输出结果有锁定内容，lockunspent true命令解锁
+  ./omnicore-cli -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf  lockunspent true
+
+  ./omnicore-cli -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf estimatefee 10
+  
+  ./omnicore-cli -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf walletpassphrase "one12345678" 2000
+  
+  ./omnicore-cli -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf omni_funded_send  "3Lnk5GEox6iNsiEJGcJBfh3kkSPZx6vPxN"  "1J2TKPGmCVfaA9erMWHKV1DZsn5gVL4HJS"  31 "22045" "1BJKUYHb8te5ZSn1ABjUEL77jq5wHvfYqD" 
+  
+./omnicored -conf=/home/eos1/omni/omnicore-0.3.1/data/omnicore.conf   -datadir=/home/eos1/omni/omnicore-0.3.1/data  -daemon
+
+
+/home/wallet/omnicore-0.5.0/bin/omnicore-cli -conf=/home/wallet/omnicore-0.5.0/config/omnicore.conf walletpassphrase "goodti3" 60000000
+
+/home/wallet/omnicore-0.5.0/bin/omnicore-cli -conf=/home/wallet/omnicore-0.5.0/config/omnicore.conf omni_funded_send  "1PU8Fk4PEiHeckCN55dfTJwf8ZNPH2P7r3"  "1J2TKPGmCVfaA9erMWHKV1DZsn5gVL4HJS"  31 "42432.8" "1PU8Fk4PEiHeckCN55dfTJwf8ZNPH2P7r3"
+
+
+omni钱包客户端发送btc
+/home/wallet/omnicore-0.5.0/bin/omnicore-cli -conf=/home/wallet/omnicore-0.5.0/config/omnicore.conf sendtoaddress "1Cui4Nw29PgqMuEyr68LYzmNyW5JT54de3" 0.009

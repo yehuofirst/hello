@@ -1,0 +1,127 @@
+
+
+#16928196----16928321 缺失
+
+SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >= 16928321 and bnum <= 16928321
+> WARNING:  lua_fdw: min=16928321,max=16928321,count=1
+> ERROR:  invalid input syntax for type json
+DETAIL:  Escape sequence "\'" is invalid.
+CONTEXT:  JSON data, line 1: ...ombxgqge","quantity":"6000.4598 PUB","memo":"It\'...
+PL/pgSQL function actions_jsonb(text) line 8 at assignment
+
+
+SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >= 16928196 and bnum <= 16928196
+> WARNING:  lua_fdw: min=16928196,max=16928196,count=1
+> ERROR:  invalid input syntax for type json
+DETAIL:  Escape sequence "\'" is invalid.
+CONTEXT:  JSON data, line 1: ...dmobqhage","quantity":"748.9522 PUB","memo":"It\'...
+PL/pgSQL function actions_jsonb(text) line 8 at assignment
+
+#20801922 缺失
+SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >= 20801922 and bnum <= 20801922
+> WARNING:  lua_fdw: min=20801922,max=20801922,count=1
+> ERROR:  invalid input syntax for type json
+DETAIL:  Token "type" is invalid.
+CONTEXT:  JSON data, line 1: ...fees","quantity":"120.3657 DICE","memo":"{\\"type...
+PL/pgSQL function actions_jsonb(text) line 8 at assignment
+
+25000000
+#25000001,25500000缺失 后面的高度查询都会报错了
+SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >= 25202383 and bnum <= 25202383
+> WARNING:  lua_fdw: min=25202383,max=25202383,count=1
+> ERROR:  invalid input syntax for type json
+DETAIL:  Token "type" is invalid.
+CONTEXT:  JSON data, line 1: ...xiofees","quantity":"0.0049 EOS","memo":"{\\"type...
+PL/pgSQL function actions_jsonb(text) line 8 at assignment
+
+
+06-07
+28000001 and bnum <= 28500000 queshi
+SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >=28090484 and bnum <= 28090484
+> WARNING:  lua_fdw: min=28090484,max=28090484,count=1
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...AkdGnMbBF2z28856KeseRzXC9Wn","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+30505932，31006748，40519353----有问题的高度 太长
+30260001--40000000 没跑
+
+
+0608-解决30505932，31006748，40519353----有问题的高度 太长
+28000001 and bnum <= 28500000没跑
+
+SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >= 31112679 and bnum <= 31112679
+> WARNING:  lua_fdw: min=31112679,max=31112679,count=1
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...EMUEaSa8oULfqcrkCap691brjiP","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+31000001--31500000没跑
+INSERT INTO t_actions (SELECT bnum, bhash, actions_jsonb(actions) actions FROM lua_block_actions WHERE bnum >= 31000001 and bnum <= 31500000);
+
+
+> WARNING:  lua_fdw: (33000001,33500000),bnum=33316731,total_count=316740,count=2150,dt=5.301s,avg=162.16/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...UxdQdgQuPBxy9dEt4VqBzXz4ZZj","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+
+> WARNING:  lua_fdw: (35000001,35500000),bnum=35362961,total_count=362970,count=1400,dt=5.655s,avg=186.91/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...SapRujuvApogrmaa3uGZkvQbQ4f","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+> WARNING:  lua_fdw: (35500001,36000000),bnum=35546021,total_count=46030,count=1800,dt=5.948s,avg=286.73/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...F3PMdXSkmxuH3k78go51Nkw2JHH","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+> WARNING:  lua_fdw: (36000001,36500000),bnum=36304931,total_count=304940,count=600,dt=5.315s,avg=184.85/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...SCBnsLDcKQiveLU6Wxrg2jzAWJv","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+> WARNING:  lua_fdw: (36500001,37000000),bnum=36528241,total_count=28250,count=1400,dt=7.999s,avg=139.69/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...R9v6bvkdHsoGwcDMqLNX8UDF9of","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+> WARNING:  lua_fdw: (40000001,40500000),bnum=40036381,total_count=36390,count=1800,dt=5.091s,avg=306.59/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...R9v6bvkdHsoGwcDMqLNX8UDF9of","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+> WARNING:  lua_fdw: (45000001,45500000),bnum=45067421,total_count=67430,count=1200,dt=6.672s,avg=602.13/s
+> ERROR:  unsupported Unicode escape sequence
+DETAIL:  \u0000 cannot be converted to text.
+CONTEXT:  JSON data, line 1: ...D2hD17C2XQpY2oY8xD1kVyYLoYh","encrypted_message":...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+
+> WARNING:  lua_fdw: (50500001,51000000),bnum=50647151,total_count=147160,count=2780,dt=5.163s,avg=204.14/s
+> ERROR:  invalid input syntax for type json
+DETAIL:  Token "湨" is invalid.
+CONTEXT:  JSON data, line 1: ... EOS","memo":"You win! Your bet seed was: 鯸"湨...
+PL/pgSQL function actions_jsonb(bytea) line 8 at assignment
+
+36528372   50647256
+----28000001 and bnum <= 28500000   31000001--31500000  33000001--33500000 ，35000001--50000000  50500001,51000000
+
+
+50000000--  50500001跑完了
+
+
+50000000-57000000跑完了 0609-22：33
+
+35000001--50000000 跑完了0610-1802
+
+28000001---28500000  跑完了 0610-1450
+62500000跑完了

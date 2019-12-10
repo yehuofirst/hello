@@ -1,0 +1,14 @@
+wget -q -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+sudo apt update
+sudo  apt install postgresql-11 -y
+
+sudo sh -c 'echo "host    all             all             0.0.0.0 0.0.0.0         md5" > vi /etc/postgresql/11/main/pg_hba.conf'
+sudo sed -i 's/#listen_addresses = 'localhost'/listen_addresses = '*'/g' /etc/postgresql/11/main/postgresql.conf
+systemctl restart postgresql.service
+
+1. 设置pgsql密码并新建库
+     #sudo su - postgres   进入到-bash
+     # psql                进入到pgsql命令行
+     #\password             设置pgsql密码  管理员账号是postgres
+

@@ -1,0 +1,62 @@
+mongod -f /home/eos/mongodb/conf/config.yaml
+mongod -f /home/eos/mongodb/conf/shard1.yaml
+mongos -f /home/eos/mongodb/conf/mongos.yaml
+
+mongod -f /home/eos/mongodb/conf/config.yaml
+mongod -f /home/eos/mongodb/conf/shard2.yaml
+mongos -f /home/eos/mongodb/conf/mongos.yaml
+
+mongod -f /home/eos/mongodb/conf/config.yaml
+mongod -f /home/eos/mongodb/conf/shard3.yaml
+mongos -f /home/eos/mongodb/conf/mongos.yaml
+
+nohup nodeos --data-dir /home/eos1/eos0110/ >/dev/null 2>&1 &
+
+>/dev/null 2>&1 &
+>/dev/null 2>&1
+
+max-transaction-time = 100000
+
+python3 -m pyeosloop.scripts.loop_upsert_worker
+python3 -m pyeosloop.scripts.loop_group_worker
+
+
+python3 -m pyeosloop.scripts.txinfo_worker --blocknum_start=13000000 --blocknum_end=30000000 --dbdata=/home/mongo3/data
+
+find . -type f | xargs sed -i 's/192.168.1.52/192.168.1.53/g'
+
+
+./loop_upsert_worker
+./loop_group_worker
+./txinfo_worker --config=/home/mongo3/pyeosloop/config/main_config.ini --logging=./config/logging/logging_00.ini  --event_whitelist=newaccount_info,contract_info,block_info_count --lock=./config/locks/txinfo_worker_1 --lastid_lock=./config/worker/txinfo_worker_1.json
+
+./txinfo_worker --config=/home/mongo3/pyeosloop/config/main_config.ini --logging=./config/logging/logging_02.ini --event_whitelist=action_info,txinfo_info,block_info --lock=./config/locks/txinfo_worker_2 --lastid_lock=./config/worker/txinfo_worker_2.json
+
+./txinfo_worker --config=/home/mongo3/pyeosloop/config/main_config.ini --logging=./config/logging/logging_03.ini  --event_whitelist=block_info_count --lock=./config/locks/txinfo_worker_3 --lastid_lock=./config/worker/txinfo_worker_3.json
+
+
+C:/Users/john/AppData/Local/Programs/Python/Python37
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+auto enp2s0
+iface enp2s0 inet static
+address 192.168.1.157
+mask 255.255.255.0
+gateway 192.168.1.1
+dns-nameserver 192.168.1.1
+
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+sudo apt-get install mongodb-org
+
+mkdir -p /usr/local/mongodb/conf mkdir -p /usr/local/mongodb/mongos/log mkdir -p /usr/local/mongodb/config/data mkdir -p /usr/local/mongodb/config/log mkdir -p /usr/local/mongodb/shard1/data mkdir -p /usr/local/mongodb/shard1/log mkdir -p /usr/local/mongodb/shard2/data mkdir -p /usr/local/mongodb/shard2/log mkdir -p /usr/local/mongodb/shard3/data mkdir -p /usr/local/mongodb/shard3/log
+mkdir -p /home/mongo1/Desktop/mongodb/conf mkdir -p /home/mongo1/Desktop/mongodb/mongos/log mkdir -p /home/mongo1/Desktop/mongodb/config/data mkdir -p /home/mongo1/Desktop/mongodb/config/log mkdir -p /home/mongo1/Desktop/mongodb/shard1/data mkdir -p /home/mongo1/Desktop/mongodb/shard1/log mkdir -p /home/mongo1/Desktop/mongodb/shard2/data mkdir -p /home/mongo1/Desktop/mongodb/shard2/log mkdir -p /home/mongo1/Desktop/mongodb/shard3/data mkdir -p /home/mongo1/Desktop/mongodb/shard3/log
+
+
+C:/Users/john/AppData/Local/Programs/Python/Python37
+
+	./nodeos --data-dir=/home/eos1/eos500 --config-dir=/home/eos1/eos500/config >/home/eos1/1.txt 2>&1 &
+	
+	find /home/eos1/jconfig/supervisor/bak/ -name *.conf  sed -i 's/eos/eos1/'

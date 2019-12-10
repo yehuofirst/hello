@@ -1,0 +1,47 @@
+#!/bin/bash
+ 
+# First argument: Client identifier
+ 
+KEY_DIR=~/openvpn-ca/keys
+OUTPUT_DIR=~/client-configs/files
+BASE_CONFIG=~/client-configs/base.conf
+ 
+cat ${BASE_CONFIG} \
+    &lt;(echo -e '<ca>') \
+    ${KEY_DIR}/ca.crt \
+    &lt;(echo -e '</ca>\n<cert>') \
+    ${KEY_DIR}/client1.crt \
+    &lt;(echo -e '</cert>\n<key>') \
+    ${KEY_DIR}/client1.key \
+    &lt;(echo -e '</key>\n<tls>') \
+    ${KEY_DIR}/ta.key \
+    &lt;(echo -e '</tls>') \
+    > ${OUTPUT_DIR}/${1}.ovpnclient1.crt \
+    &lt;(echo -e '<key>') \
+    ${KEY_DIR}/client1.key \
+    &lt;(echo -e '</key>\n<tls>') \
+    ${KEY_DIR}/ta.key \
+    &lt;(echo -e '</tls>') \
+    > ${OUTPUT_DIR}/${1}.ovpn
+	
+	
+	Congratulations, ShadowsocksR server install completed!
+Your Server IP        :  61.141.138.129 
+Your Server Port      :  16421 
+Your Password         :  123456 
+Your Protocol         :  origin 
+Your obfs             :  plain 
+Your Encryption Method:  aes-256-cfb 
+
+You can now connect to your VPN via your external IP 61.141.138.129
+Username: vpn
+Password: NsU-CZr-LN5
+
+1.导入数据。
+sysbench --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --db-driver=pgsql --pgsql-db=loadtest --pgsql-user=postgres --pgsql-password=postgres --pgsql-port=5432 --pgsql-host=192.168.1.211 --oltp-tables-count=64 --oltp-table-size=10000000 --num-threads=20 prepare
+
+2.压测数据。
+sysbench --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --db-driver=pgsql --pgsql-db=loadtest --pgsql-user=postgres --pgsql-password=postgres --pgsql-port=5432 --pgsql-host=192.168.1.211 --oltp-tables-count=64 --oltp-table-size=10000000 --max-time=3600 --max-requests=0 --num-threads=64 --report-interval=3 --forced-shutdown=1 run
+
+3.清理数据。
+sysbench --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --db-driver=pgsql --pgsql-db=loadtest --pgsql-user=postgres --pgsql-password=postgres --pgsql-port=5432 --pgsql-host=192.168.1.211 --oltp-tables-count=64 --oltp-table-size=10000000 --max-time=3600 --max-requests=0 --num-threads=200 cleanup

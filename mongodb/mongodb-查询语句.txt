@@ -1,0 +1,4 @@
+聚合去重统计记录数：
+db.getCollection('actions_20190205').aggregate([{$match:{"blocknum" : {"$lte":41121248,"$gte":41091246}}},{$project:{"txid":true}}, {$group:{_id:"$txid"}}, { $group: { _id: null, count: { $sum: 1 } } } ])
+
+

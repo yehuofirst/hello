@@ -1,0 +1,14 @@
+/bin/echo "db.serverStatus().$1" |/data/mongodb/bin/mongo admin | grep "$2" | awk -F ':' '{print $$2}' | awk -F ',' '{print $$1}'
+
+/bin/echo "db.serverStatus().opcounters" |/home/eos/bin/mongo --host 127.0.0.1 --port 27003 admin | grep "update" | cut -d ":" -f 2|cut -d "," -f 1|cut -d " " -f 2
+
+MongoDB.status
+UserParameter=MongoDB.status[*],/bin/echo "db.serverStatus().$1" |/home/eos/bin/mongo 127.0.0.1:27010/admin | grep "$2" | awk -F ':' '{print $$2}' | awk -F ',' '{print $$1}'
+
+
+UserParameter=MongoDB.status[*],/bin/echo "db.serverStatus().$1" |/home/eos/bin/mongo 127.0.0.1:27003/admin|grep $2| cut -d ":" -f 2|cut -d "," -f 1|cut -d " " -f 2
+
+
+sudo sed -i 's/192.168.1.123/192.168.1.211/g' /etc/zabbix/zabbix_agentd.conf
+
+sudo zabbix_get -s 192.168.1.173 -p 10050 -k MongoDB.status[opcounters,update]

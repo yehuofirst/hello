@@ -1,0 +1,93 @@
+﻿centos手动加入
+root soft nofile 65535
+root hard nofile 65535
+* soft nofile 65535
+* hard nofile 65535
+* soft nproc 64000
+* hard nproc 64000
+
+
+192.168.1.171，192.168.1.172，192.168.1.173
+mongodb4.0分片部署.rar  分别解压到3台服务器，并设置环境变量到bin目录
+
+配置服务器： 27000
+mongos路由：27010
+分片shard1：27001
+分片shard2：27002
+分片shard3：27003
+
+mongod -f /home/eos/mongodb/conf/config.yaml
+mongod -f /home/eos/mongodb/conf/shard1.yaml
+mongod -f /home/eos/mongodb/conf/shard2.yaml
+mongod -f /home/eos/mongodb/conf/shard3.yaml
+mongos -f /home/eos/mongodb/conf/mongos.yaml
+
+配置服务器
+mongod -f /home/eos/mongodb/conf/config.yaml   
+//三台服务器操作一致
+mongo --port 27000                    
+//连接配置服务控制台
+config={_id:"configs",members:[{_id:0,host:"192.168.1.171:27000"},{_id:1,host:"192.168.1.172:27000"},{_id:2,host:"192.168.1.173:27000"}]}   
+ //创建复制集
+rs.initiate(config)  
+
+mongod -f /home/eos/mongodb/conf/shard1.yaml	//三台服务器操作一致
+mongo --port 27001    //连接shard1服务控制台 arbiterOnly -仲裁
+use admin
+config={_id:"shard1",members:[{_id:0,host:"192.168.1.171:27001",priority:2},{_id:1,host:"192.168.1.172:27001",priority:1},{_id:2,host:"192.168.1.173:27001",arbiterOnly:true}]}
+rs.initiate(config)
+
+mongod -f /home/eos/mongodb/conf/shard2.yaml	//三台服务器操作一致
+mongo --port 27002    //连接shard2服务控制台
+use admin
+config={_id:"shard2",members:[{_id:0,host:"192.168.1.171:27002",arbiterOnly:true},{_id:1,host:"192.168.1.172:27002",priority:2},{_id:2,host:"192.168.1.173:27002",priority:1}]}
+rs.initiate(config)
+
+mongod -f /home/eos/mongodb/conf/shard3.yaml	//三台服务器操作一致
+mongo --port 27003    //连接shard3服务控制台
+use admin
+config={_id:"shard3",members:[{_id:0,host:"192.168.1.171:27003",priority:1},{_id:1,host:"192.168.1.172:27003",arbiterOnly:true},{_id:2,host:"192.168.1.173:27003",priority:2}]}
+rs.initiate(config)
+
+mongos -f /home/eos/mongodb/conf/mongos.yaml	//三台服务器操作一致
+mongo --port 27010
+#使用admin数据库
+use  admin
+#添加分片服务器
+sh.addShard("shard1/192.168.1.171:27001,192.168.1.172:27001,192.168.1.173:27001")
+sh.addShard("shard2/192.168.1.171:27002,192.168.1.172:27002,192.168.1.173:27002")
+sh.addShard("shard3/192.168.1.171:27003,192.168.1.172:27003,192.168.1.173:27003")
+#查看分片集群状态
+sh.status()
+
+sh.enableSharding("eos")
+#指定eos数据库分片生效
+
+---------------------
+连接上mongos添加的用户会保存在config副本集中，但是不会保存到shard副本集，因此添加用户的操作需要分别在config、shard1、shard2、shard3上执行
+
+db.createUser({user:"admin",pwd:"eos@2018",roles:[{role:"root",db:"admin"}]})
+
+db.auth("admin","eos@2018")
+
+db.createUser({user:"eos",pwd:"20190808",roles:[{role:"readWriteAnyDatabase",db:"admin"}]})
+
+redis密码：eos2019
+修改密码
+db.changeUserPassword('eos','20190808')
+
+mongodb://eos:20190808@192.168.1.171:27010,192.168.1.172:27010,192.168.1.173:27010/admin?connectTimeoutMS=5000
+-----------------------
+##是否
+sh.getBalancerState()
+sh.stopBalancer()
+sh.startBalancer()
+##如果balance开启，查看是否正在有数据的迁移
+sh.isBalancerRunning()
+db.getCollection('txinfo').getShardDistribution()
+db.runCommand( { removeshard: "your_shard_name" } ) 
+
+db.getCollection('txinfo').getShardDistribution()
+
+
+mongorestore -h 192.168.1.173:27010 --dir /home/eos/mongodb/dump/

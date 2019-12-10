@@ -1,0 +1,594 @@
+{ 
+    "Collection" : "action_indexs", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "actions_20190201", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "actions_20190202", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "actions_20190203", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "actions_20190204", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "actions_20190205", 
+    "Count" : NumberInt(12163320), 
+    "Size" : 7660452598.0, 
+    "Storage Size" : 4205043712.0, 
+    "Avg Object Size" : 629.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1417695232.0
+}
+{ 
+    "Collection" : "actions_20190206", 
+    "Count" : NumberInt(12388631), 
+    "Size" : 7810996141.0, 
+    "Storage Size" : 4243873792.0, 
+    "Avg Object Size" : 630.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1436835840.0
+}
+{ 
+    "Collection" : "actions_20190207", 
+    "Count" : NumberInt(13507563), 
+    "Size" : 8527754208.0, 
+    "Storage Size" : 4610306048.0, 
+    "Avg Object Size" : 631.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1568940032.0
+}
+{ 
+    "Collection" : "actions_20190208", 
+    "Count" : NumberInt(11905451), 
+    "Size" : 7525344143.0, 
+    "Storage Size" : 4135841792.0, 
+    "Avg Object Size" : 632.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1434173440.0
+}
+{ 
+    "Collection" : "actions_20190209", 
+    "Count" : NumberInt(13164551), 
+    "Size" : 8392402362.0, 
+    "Storage Size" : 4402786304.0, 
+    "Avg Object Size" : 637.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1536905216.0
+}
+{ 
+    "Collection" : "actions_20190210", 
+    "Count" : NumberInt(9934186), 
+    "Size" : 6267681442.0, 
+    "Storage Size" : 3486683136.0, 
+    "Avg Object Size" : 630.3332810559416, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1163448320.0
+}
+{ 
+    "Collection" : "actions_20190211", 
+    "Count" : NumberInt(9634662), 
+    "Size" : 6102705530.0, 
+    "Storage Size" : 3424595968.0, 
+    "Avg Object Size" : 633.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1129865216.0
+}
+{ 
+    "Collection" : "actions_20190212", 
+    "Count" : NumberInt(10239740), 
+    "Size" : 6471727888.0, 
+    "Storage Size" : 3586502656.0, 
+    "Avg Object Size" : 631.6666533525265, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1198952448.0
+}
+{ 
+    "Collection" : "actions_20190213", 
+    "Count" : NumberInt(10859749), 
+    "Size" : 6854884911.0, 
+    "Storage Size" : 3832918016.0, 
+    "Avg Object Size" : 631.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1266192384.0
+}
+{ 
+    "Collection" : "actions_20190214", 
+    "Count" : NumberInt(11164676), 
+    "Size" : 7044489751.0, 
+    "Storage Size" : 3932151808.0, 
+    "Avg Object Size" : 630.6668600145674, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1306120192.0
+}
+{ 
+    "Collection" : "actions_20190215", 
+    "Count" : NumberInt(11463165), 
+    "Size" : 7220921697.0, 
+    "Storage Size" : 3964260352.0, 
+    "Avg Object Size" : 629.6665702709505, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1339822080.0
+}
+{ 
+    "Collection" : "actions_20190216", 
+    "Count" : NumberInt(13194462), 
+    "Size" : 8315354670.0, 
+    "Storage Size" : 4525260800.0, 
+    "Avg Object Size" : 630.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1539706880.0
+}
+{ 
+    "Collection" : "actions_20190217", 
+    "Count" : NumberInt(11473984), 
+    "Size" : 7226583664.0, 
+    "Storage Size" : 3982893056.0, 
+    "Avg Object Size" : 629.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1340657664.0
+}
+{ 
+    "Collection" : "actions_20190218", 
+    "Count" : NumberInt(10713090), 
+    "Size" : 6743741710.0, 
+    "Storage Size" : 3744456704.0, 
+    "Avg Object Size" : 629.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1254199296.0
+}
+{ 
+    "Collection" : "actions_20190219", 
+    "Count" : NumberInt(11423956), 
+    "Size" : 7201050268.0, 
+    "Storage Size" : 4037160960.0, 
+    "Avg Object Size" : 630.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1328893952.0
+}
+{ 
+    "Collection" : "actions_20190220", 
+    "Count" : NumberInt(10574272), 
+    "Size" : 6695901110.0, 
+    "Storage Size" : 3780268032.0, 
+    "Avg Object Size" : 632.6666871251279, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1237839872.0
+}
+{ 
+    "Collection" : "actions_20190221", 
+    "Count" : NumberInt(10145107), 
+    "Size" : 6409562662.0, 
+    "Storage Size" : 3616657408.0, 
+    "Avg Object Size" : 631.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1182998528.0
+}
+{ 
+    "Collection" : "actions_20190222", 
+    "Count" : NumberInt(10723855), 
+    "Size" : 6753899264.0, 
+    "Storage Size" : 3809849344.0, 
+    "Avg Object Size" : 629.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1255641088.0
+}
+{ 
+    "Collection" : "actions_20190223", 
+    "Count" : NumberInt(10529192), 
+    "Size" : 6627681788.0, 
+    "Storage Size" : 3736387584.0, 
+    "Avg Object Size" : 629.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1230159872.0
+}
+{ 
+    "Collection" : "actions_20190224", 
+    "Count" : NumberInt(9145937), 
+    "Size" : 5763249523.0, 
+    "Storage Size" : 3230003200.0, 
+    "Avg Object Size" : 630.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(1069719552)
+}
+{ 
+    "Collection" : "actions_20190225", 
+    "Count" : NumberInt(10119789), 
+    "Size" : 6349503748.0, 
+    "Storage Size" : 3553923072.0, 
+    "Avg Object Size" : 627.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1198997504.0
+}
+{ 
+    "Collection" : "actions_20190226", 
+    "Count" : NumberInt(10350400), 
+    "Size" : 6496172183.0, 
+    "Storage Size" : 3630792704.0, 
+    "Avg Object Size" : 627.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1212276736.0
+}
+{ 
+    "Collection" : "actions_20190227", 
+    "Count" : NumberInt(9287713), 
+    "Size" : 5823214265.0, 
+    "Storage Size" : 3265736704.0, 
+    "Avg Object Size" : 626.3332305810914, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1090207744.0
+}
+{ 
+    "Collection" : "actions_20190228", 
+    "Count" : NumberInt(9559361), 
+    "Size" : 5983176487.0, 
+    "Storage Size" : 3318677504.0, 
+    "Avg Object Size" : 625.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : 1116708864.0
+}
+{ 
+    "Collection" : "block_indexs", 
+    "Count" : NumberInt(24), 
+    "Size" : NumberInt(4296), 
+    "Storage Size" : NumberInt(110592), 
+    "Avg Object Size" : 179.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(221184)
+}
+{ 
+    "Collection" : "block_info", 
+    "Count" : NumberInt(4141513), 
+    "Size" : 1267282467.0, 
+    "Storage Size" : NumberInt(748425216), 
+    "Avg Object Size" : 305.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(482512896)
+}
+{ 
+    "Collection" : "buysell_rex_inout_log", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "buysell_rex_log", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "claimrewards_log", 
+    "Count" : NumberInt(2008), 
+    "Size" : NumberInt(983734), 
+    "Storage Size" : NumberInt(696320), 
+    "Avg Object Size" : 489.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(425984)
+}
+{ 
+    "Collection" : "rent_rex_log", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "resource_log", 
+    "Count" : NumberInt(300049), 
+    "Size" : NumberInt(177400467), 
+    "Storage Size" : NumberInt(101388288), 
+    "Avg Object Size" : 591.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(34234368)
+}
+{ 
+    "Collection" : "resource_refund_log", 
+    "Count" : NumberInt(10562), 
+    "Size" : NumberInt(4878831), 
+    "Storage Size" : NumberInt(3747840), 
+    "Avg Object Size" : 461.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(1486848)
+}
+{ 
+    "Collection" : "savings_rex_log", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "token_transfer_log_20190201", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "token_transfer_log_20190202", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "token_transfer_log_20190203", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "token_transfer_log_20190204", 
+    "Count" : NumberInt(0), 
+    "Size" : NumberInt(0), 
+    "Storage Size" : NumberInt(12288), 
+    "Avg Object Size" : 0.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(24576)
+}
+{ 
+    "Collection" : "token_transfer_log_20190205", 
+    "Count" : NumberInt(6005394), 
+    "Size" : 4014868961.0, 
+    "Storage Size" : 1768349696.0, 
+    "Avg Object Size" : 668.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(704180224)
+}
+{ 
+    "Collection" : "token_transfer_log_20190206", 
+    "Count" : NumberInt(6144911), 
+    "Size" : 4116422788.0, 
+    "Storage Size" : 1812467712.0, 
+    "Avg Object Size" : 669.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(722423808)
+}
+{ 
+    "Collection" : "token_transfer_log_20190207", 
+    "Count" : NumberInt(6762186), 
+    "Size" : 4523393389.0, 
+    "Storage Size" : 1986449408.0, 
+    "Avg Object Size" : 668.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(794685440)
+}
+{ 
+    "Collection" : "token_transfer_log_20190208", 
+    "Count" : NumberInt(5761147), 
+    "Size" : 3876062485.0, 
+    "Storage Size" : 1703735296.0, 
+    "Avg Object Size" : 672.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(674209792)
+}
+{ 
+    "Collection" : "token_transfer_log_20190209", 
+    "Count" : NumberInt(6907367), 
+    "Size" : 4640582624.0, 
+    "Storage Size" : 1961525248.0, 
+    "Avg Object Size" : 671.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(809496576)
+}
+{ 
+    "Collection" : "token_transfer_log_20190210", 
+    "Count" : NumberInt(4733327), 
+    "Size" : 3177028389.0, 
+    "Storage Size" : 1399119872.0, 
+    "Avg Object Size" : 671.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(557850624)
+}
+{ 
+    "Collection" : "token_transfer_log_20190211", 
+    "Count" : NumberInt(4537827), 
+    "Size" : 3049340112.0, 
+    "Storage Size" : 1347088384.0, 
+    "Avg Object Size" : 671.3336713805969, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(533647360)
+}
+{ 
+    "Collection" : "token_transfer_log_20190212", 
+    "Count" : NumberInt(4778108), 
+    "Size" : 3222694631.0, 
+    "Storage Size" : 1419984896.0, 
+    "Avg Object Size" : 674.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(555778048)
+}
+{ 
+    "Collection" : "token_transfer_log_20190213", 
+    "Count" : NumberInt(4955825), 
+    "Size" : 3327286411.0, 
+    "Storage Size" : 1465987072.0, 
+    "Avg Object Size" : 671.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(580796416)
+}
+{ 
+    "Collection" : "token_transfer_log_20190214", 
+    "Count" : NumberInt(4649242), 
+    "Size" : 3132259274.0, 
+    "Storage Size" : 1388081152.0, 
+    "Avg Object Size" : 673.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(546115584)
+}
+{ 
+    "Collection" : "token_transfer_log_20190215", 
+    "Count" : NumberInt(4952274), 
+    "Size" : 3320573448.0, 
+    "Storage Size" : 1454116864.0, 
+    "Avg Object Size" : 670.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(579993600)
+}
+{ 
+    "Collection" : "token_transfer_log_20190216", 
+    "Count" : NumberInt(5205418), 
+    "Size" : 3520969905.0, 
+    "Storage Size" : 1553612800.0, 
+    "Avg Object Size" : 676.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(610488320)
+}
+{ 
+    "Collection" : "token_transfer_log_20190217", 
+    "Count" : NumberInt(4723955), 
+    "Size" : 3181329713.0, 
+    "Storage Size" : 1396142080.0, 
+    "Avg Object Size" : 673.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(552316928)
+}
+{ 
+    "Collection" : "token_transfer_log_20190218", 
+    "Count" : NumberInt(4371250), 
+    "Size" : 2934321744.0, 
+    "Storage Size" : 1291825152.0, 
+    "Avg Object Size" : 671.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(513896448)
+}
+{ 
+    "Collection" : "token_transfer_log_20190219", 
+    "Count" : NumberInt(4367225), 
+    "Size" : 2943147298.0, 
+    "Storage Size" : 1316839424.0, 
+    "Avg Object Size" : 673.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(513196032)
+}
+{ 
+    "Collection" : "token_transfer_log_20190220", 
+    "Count" : NumberInt(3973474), 
+    "Size" : 2692500461.0, 
+    "Storage Size" : 1221922816.0, 
+    "Avg Object Size" : 677.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(465448960)
+}
+{ 
+    "Collection" : "token_transfer_log_20190221", 
+    "Count" : NumberInt(3806936), 
+    "Size" : 2569357467.0, 
+    "Storage Size" : 1154588672.0, 
+    "Avg Object Size" : 674.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(445689856)
+}
+{ 
+    "Collection" : "token_transfer_log_20190222", 
+    "Count" : NumberInt(4445394), 
+    "Size" : 3000337491.0, 
+    "Storage Size" : 1333321728.0, 
+    "Avg Object Size" : 674.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(522997760)
+}
+{ 
+    "Collection" : "token_transfer_log_20190223", 
+    "Count" : NumberInt(4292807), 
+    "Size" : 2887242235.0, 
+    "Storage Size" : 1281208320.0, 
+    "Avg Object Size" : 672.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(503476224)
+}
+{ 
+    "Collection" : "token_transfer_log_20190224", 
+    "Count" : NumberInt(3861075), 
+    "Size" : 2591104078.0, 
+    "Storage Size" : 1145487360.0, 
+    "Avg Object Size" : 671.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(452333568)
+}
+{ 
+    "Collection" : "token_transfer_log_20190225", 
+    "Count" : NumberInt(4077605), 
+    "Size" : 2737229318.0, 
+    "Storage Size" : 1214345216.0, 
+    "Avg Object Size" : 671.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(476561408)
+}
+{ 
+    "Collection" : "token_transfer_log_20190226", 
+    "Count" : NumberInt(4146489), 
+    "Size" : 2788093133.0, 
+    "Storage Size" : 1234845696.0, 
+    "Avg Object Size" : 672.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(488611840)
+}
+{ 
+    "Collection" : "token_transfer_log_20190227", 
+    "Count" : NumberInt(3663788), 
+    "Size" : 2462720442.0, 
+    "Storage Size" : 1098358784.0, 
+    "Avg Object Size" : 672.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(431611904)
+}
+{ 
+    "Collection" : "token_transfer_log_20190228", 
+    "Count" : NumberInt(3867958), 
+    "Size" : 2593887385.0, 
+    "Storage Size" : 1147650048.0, 
+    "Avg Object Size" : 670.0, 
+    "Indexes" : NumberInt(2), 
+    "Index Size" : NumberInt(452636672)
+}

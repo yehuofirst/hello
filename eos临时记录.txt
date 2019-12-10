@@ -1,0 +1,73 @@
+btc：0.00309429
+ltc：0.08894569
+bch：0.00330351
+dash：0.04021610
+usdt：0.00929258
+
+0x15b930C62732a1791DC4f8f6A89228f25A3CDaD0
+3000000000000000000
+0x4a0F64E6800c34e816fBd962acf8e68B817Bc368
+997000000000000000
+012766061016901632
+0x69b7ba7F33EEb995d5357f68A6b809fB8C2e86B3
+1795760000000000
+200000000000000
+0xB8088f069FCfF4af628F7d933AA791BB90EAcbE8
+1000000000000000
+200000000000000
+17000000000000
+
+
+Private Key: 5JmaT3nf9kLr7a5rgXPW4YSgb5eULGwer96MQiRT8wfraPyZpYQ Public Key: EOS584hNTTKEZ2VCLnbiRnswjGLfmRbEg9fpujeYgjn1aZDerEfo9
+
+传输
+cleos push action eosio.token transfer '{"from":"eosio","to":"useraaaaaaaa","quantity":"20.0000 SYS","memo":"some SYS for you alice!"}' -p eosio@active
+
+cleos push action eosio.token transfer '{"from":"useraaaaaaaa","to":"test11111111","quantity":"10.0000 AAA","memo":"some SYS for you alice!"}' -p useraaaaaaaa@active
+
+增发货币
+cleos push action eosio.token issue '[ "useraaaaaae", "1000000.0000 EOS", "" ]' -p eosio
+
+查账户信息
+cleos get account test11111111
+
+查币种余额
+cleos get currency balance eosio.token test11111111  AAA
+
+cleos system newaccount useraaaaaaab wang11111111 EOS6gnwsXCtpXwwTvCFuwHWzACAJsgExvNRaTAtTWJB6TcP879wFh EOS6gnwsXCtpXwwTvCFuwHWzACAJsgExvNRaTAtTWJB6TcP879wFh --stake-net '2 EOS' --stake-cpu '20 EOS'  --buy-ram-kbytes 10 
+
+
+vi /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/accounts.json
+/bin/sh -c /home/zhang/eossrc/eos/build/programs/keosd/keosd --unlock-timeout 999999999 --http-server-address 0.0.0.0:6666 --wallet-dir /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/wallet
+/home/zhang/eossrc/eos/build/programs/keosd/keosd --unlock-timeout 999999999 --http-server-address 0.0.0.0:6666 --wallet-dir /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/wallet
+
+/home/zhang/eossrc/eos/build/programs/keosd/keosd --unlock-timeout 999999999 --http-server-address 192.168.1.194:8891 --wallet-dir /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/wallet
+
+cleos -u  https://api.eoslaomao.com system newaccount timtan511322 eostim111111 EOS4y36DbGLZJNJE1TzTHKdhPTvW6ZUTVFAnaWktSXdKwxfhpWQiJ EOS4y36DbGLZJNJE1TzTHKdhPTvW6ZUTVFAnaWktSXdKwxfhpWQiJ --stake-net '0.001 EOS' --stake-cpu '0.02 EOS'  --buy-ram-kbytes 3 
+
+cleos -u  https://api.eoslaomao.com system newaccount timtan511322 eosdbk323411 EOS7nXwuKjrJHHh7LXqDFi85crjxGsXeSw1SeD2pxauEfdxMVVdfJ EOS7nXwuKjrJHHh7LXqDFi85crjxGsXeSw1SeD2pxauEfdxMVVdfJ --stake-net '0.001 EOS' --stake-cpu '0.01 EOS'  --buy-ram-kbytes 3
+
+eosdee234522--
+eosdee543213--
+eosddd434555--
+eosdde434522--
+eosdda434522--
+eosddb434533--
+eosdhc434524---
+eosdgg434523--
+eosdtg434531--
+eosdtd434512--
+eosdty434511--
+eosdbg323432--
+eosdba323422--
+eosdbk323411
+eosdhg324332
+eosdag321232
+eosdbg323154
+eosdbg322213
+eosdbg354321
+eosdbg343212
+eosdbg312351
+eosgbg324431
+eosgbg334212
+eosghg324111

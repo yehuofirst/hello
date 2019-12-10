@@ -1,0 +1,57 @@
+{
+  "name": "justdo",
+  "version": "1.0.0",
+  "description": "JustDo browser",
+  "private": true,
+  "config": {
+	"nuxt": {
+		"host": "0.0.0.0",
+		"port": 3000
+	}
+  }, 
+
+ "config": {
+	"nuxt": {
+		"host": "0.0.0.0",
+		"port": 3000
+	}
+  },
+  
+  
+ 1551  yarn
+ 1552  yarn release
+ 1553  ls
+ 1554  yarn release
+ 1555  telnet 127.0.0.1 3000
+ 1556  pm2 restart 0
+ 1557  yarn release
+ 1558  ll
+ 1559  rm -rf node_modules/
+ 1560  ls
+ 1561  yarn
+ 1562  npm run dev
+ 1563  ll
+ 1564  rm -rf *
+ 1565  yarn
+ 1566  npm run dev
+ 1567  clear
+ 1568  npm run start
+ 1569  npm run build
+ 1570  rm -rf *
+ 1571  ll
+ 1572  rm -rf *
+ 1573  ll
+ 1574  yarn
+ 1575  npm run start
+ 1576  clear
+ 1577  pm2 list
+ 1578  pm2 restart 1
+ 1579  pm2 list
+ 1580  pm2 logs 1
+ 1581  npm
+ 1582  clear
+ 1583  yarn
+ 1584  npm run restart
+ 1585  pm2 list
+ 1586  pm2 restart 0
+ 1587  pm2 list

@@ -1,0 +1,70 @@
+
+解锁钱包
+keosd --unlock-timeout 999999999 --http-server-address 192.168.1.194:8891 --wallet-dir /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/wallet
+
+keosd --unlock-timeout 999999999 --http-server-address 192.168.1.153:8888 --wallet-dir /home/eos1/eosio-wallet
+测试链创建账号
+cleos system newaccount useraaaaaaab wang11111111 EOS6gnwsXCtpXwwTvCFuwHWzACAJsgExvNRaTAtTWJB6TcP879wFh EOS6gnwsXCtpXwwTvCFuwHWzACAJsgExvNRaTAtTWJB6TcP879wFh --stake-net '2 EOS' --stake-cpu '20 EOS'  --buy-ram-kbytes 10 
+
+传输转账
+cleos push action eosio.token transfer '{"from":"useraaaaaaaa","to":"nobunaga4453","quantity":"10.0000 AAA","memo":"some SYS for you alice!"}' -p useraaaaaaaa@active
+
+主网转账fuphbyrslr5s
+cleos -u  https://api.eoslaomao.com transfer x4jz3yohe21a justdopocket "10.10 EOS" "hello d"
+代币转账
+cleos -u  https://api.eoslaomao.com transfer justdopocket port11111111 -c betdicetoken "2.000 DICE" "hello d"
+主网买内存
+cleos -u  https://api.eoslaomao.com  system buyram justdopocket justdopocket "0.5 EOS"
+ 主网抵押网络，cpu
+cleos -u  https://api.eoslaomao.com  system delegatebw justdopocket justdopocket "0.0 EOS" "2.0 EOS"
+
+导入私钥
+cleos wallet import -n default --private-key 5K4pimAxpdfdxYWtCKWSXSSoUmSPFrYk3kWEJ88G6quWafCFLvd
+
+owner加激活权限
+cleos set account permission timtan511322 active EOS8f5eJsr2huUXxMaPTnCpuwX4shykdgs6xL36gbpF17CdQxGxMZ owner -p timtan511322@owner
+
+
+增发货币
+cleos push action eosio.token issue '[ "useraaaaaae", "1000000.0000 EOS", "" ]' -p eosio
+
+查账户信息
+cleos get account test11111111
+
+查币种余额
+cleos get currency balance eosio.token test11111111  AAA
+owner加入active权限
+cleos set account permission nobunaga3451 active EOSPUBLICKEY owner -p nobunaga3451@owner
+
+
+vi /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/accounts.json
+/bin/sh -c /home/zhang/eossrc/eos/build/programs/keosd/keosd --unlock-timeout 999999999 --http-server-address 0.0.0.0:6666 --wallet-dir /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/wallet
+/home/zhang/eossrc/eos/build/programs/keosd/keosd --unlock-timeout 999999999 --http-server-address 0.0.0.0:6666 --wallet-dir /home/zhang/eossrc/eos/tutorials/bios-boot-tutorial/wallet
+
+yob5gx4vv1ir
+
+主网创建账号
+cleos -u  https://api.eoslaomao.com system newaccount nobunaga3451 justdopocket EOS6z5ANzSJY2tVV2DzMNjdpYWFbraKGB4RNmVv1k2LhYoPd4RA6U EOS76DucBJ38GVpiJB7r9YzNZqN6B7tDCyHt4dGP4fiD2tMF6shi6 --stake-net '0.01 EOS' --stake-cpu '0.01 EOS'  --buy-ram-kbytes 6
+
+
+nodeos --genesis-json /home/eos2/.local/share/eosio/genesis.json --delete-all-blocks
+
+nohup nodeos --data-dir /home/eos1/eos0117 >/dev/null 2>&1 &
+
+nohup keosd --unlock-timeout 999999999 --wallet-dir /home/eos1/eosio-wallet >/dev/null 2>&1 &
+
+
+128测试：nodeos --config-dir /home/eos2/Desktop/config/ --data-dir /home/eos2/Desktop  
+
+curl -X POST --url http://192.168.1.153:8888/v1/chain/get_block -d '{
+  "block_num_or_id": "43910668"
+}'
+
+wget --post-data="block_num_or_id=43910668" http://192.168.1.153:8888/v1/chain/get_block
+
+Private Key: 5KUawsw1LC5FJQxEovBGARE94XJA3wQn9Yk2CSCeNv8agtaydBv Public Key: EOS79Ywyxaxsvfb3w839w61oKxWoudETnkBWunsZyHaKLmETa2kXY
+
+
+cleos system newaccount jimmypage wang11111111 EOS7VJgQEQ8EF58bTtuuj2nTgiJhx77XrHc335gPCfd44VubJARq5 EOS7VJgQEQ8EF58bTtuuj2nTgiJhx77XrHc335gPCfd44VubJARq5 --stake-net '20 SYS' --stake-cpu '20 SYS'  --buy-ram-kbytes 100 
+
+Private Key: 5JpVvpYAUvy1j4vmzsvuuaHK8EVSccXxRZQ3EZmCo4ymLMmDn2T Public Key: EOS7VJgQEQ8EF58bTtuuj2nTgiJhx77XrHc335gPCfd44VubJARq5
