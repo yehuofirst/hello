@@ -1,0 +1,64 @@
+﻿c1cda2b2-062f-44f6-f541-c0952fe31122 omini轻钱包Aa@117712779
+0.000000000667158181  usdt
+d4be9ba0-a65d-42e4-88ed-efb87820163d omini钱包
+0.000789840198568091  - 0.000000005359500739 - 0.000000013550142907  = 0.000789821288924445FT
+
+4955380832.07663499
+4686654105.16269467  FT
+1833007756.07663499  二级市场ft流通
+
+L3gSYxvvQnptS6jrB5Nv6HipLS8SPQR99EdunHTM8iFfTH2NKECj
+
+
+port11111111
+EOS8b8sS9MGbKLpYC3xnyu2jNUjL53AaWr6LHiVZVwLCQfDB6jvka
+
+EOS6WQEYoEaK9GbZiNPMpo7D2BwsrsK9bRKDm1sYjtE5mZS75cvxq
+	
+	cleos wallet import --private-key 5KEXXTfDgfGmbKEmTbbQQu49EUHZmsJSA7pdUY1KSKBFp74DGMB
+	eosdex111111
+cleos wallet import --private-key 5Ht6W2qJxzDGZtJsC8R8rz4zb5mJCUSZbpe14aP9uzXDGYvHUux	
+/home/Wallet/bitcoin/bin/bitcoin-cli -datadir=/home/Wallet/bitcoin/data/getnewaddress
+	0.000000000000033797
+	
+	
+  12-14
+  cleos push action eosio.token transfer '{"from":"useraaaaaaaa","to":"test11111111","quantity":"1000.0000 AAA","memo":"some SYS for you alice!"}' -p useraaaaaaaa@active
+153qb：PW5JJQ2aXWkGBmV6ZRQjqzYQur8pCywqXShRGhfgeCeRaZSVUJqDD
+  
+myetherwallet 7f684f506f413472a7c8298163fc631c36eeea7f9f5e242a83e2756080923ce1
+
+ETH
+./geth --datadir /home/ethereum/data/ --fast --rpc --rpcapi db,eth,net,web3,personal,miner,admin,debug   ETH启动
+
+export LD_LIBRARY_PATH=/opt/glibc-2.14/lib:$LD_LIBRARY_PATH
+/home/Wallet/ethereum/geth-1.8.13/geth attach ../data/geth.ipc
+
+BTC
+./bitcoind --datadir=/home/bitcoin/data/ --daemon   BTC启动
+/home/Wallet/bitcoin/bitcoin-0.16.2/bin/bitcoin-cli -datadir=/home/Wallet/bitcoin/data/ listaccounts
+ 
+ LTC
+/home/Wallet/litecoin/litecoin-0.16.0/bin/litecoin-cli -datadir=/home/Wallet/litecoin/data/ listaccounts
+./litecoind --datadir=/home/litecoin/data/ --daemon  LTC启动
+
+BCH
+./bitcoind --datadir=/home/Wallet/bitcoin-abc-0.18.0/data/ --daemon   BCH启动
+
+/home/Wallet/bitcoin-abc-0.18.0/bin/bitcoin-cli -conf=/home/Wallet/bitcoin-abc-0.18.0/data/bitcoin.conf getblockchaininfo
+
+DASH
+./dashd --datadir=/home/Wallet/dashcore-0.12.3/data/ --daemon   DASH启动
+
+/home/Wallet/dashcore-0.12.3/bin/dash-cli -conf=/home/Wallet/dashcore-0.12.3/data/dash.conf listaccounts
+
+440306201503204222
+
+eth.sendTransaction({from: '0x03a38Dc7BFcA096f03A588fddd87C24E782BCf46', to: '0x1353CE8845b01191BCf39d635B7d2C74936F3256', gas:21000, 'gasPrice': web3.toWei(23, 'gwei'), "value": "0.002717"})
+
+eth.sendTransaction({from: '0x03a38Dc7BFcA096f03A588fddd87C24E782BCf46', to: '0x1353CE8845b01191BCf39d635B7d2C74936F3256', value: web3.toWei(0.002717, "ether")})
+
+
+eth.sendTransaction({from: '0xf98b38cb59f5135ffbb47354459ec0120cfd702d', to: '0x2CD5b4C0D9210F59714CbD0d0D50D166cB1961bd', value: web3.toWei(0.001, "ether")})
+
+
