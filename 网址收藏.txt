@@ -1,6 +1,7 @@
 mysql:
 https://blog.csdn.net/fengyuyeguirenenen/article/details/124944910?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-124944910-blog-96885235.pc_relevant_multi_platform_whitelistv4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-124944910-blog-96885235.pc_relevant_multi_platform_whitelistv4&utm_relevant_index=2
 
+https://www.cnblogs.com/hollischuang/p/15522907.html
 
 您是不是因找不到可用的其他手机号来注册而抓狂呢？
 国内免费临时手机号：
