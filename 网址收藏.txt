@@ -1,27 +1,31 @@
-ÄúÊÇ²»ÊÇÒòÕÒ²»µ½¿ÉÓÃµÄÆäËûÊÖ»úºÅÀ´×¢²á¶ø×¥¿ñÄØ£¿
-¹úÄÚÃâ·ÑÁÙÊ±ÊÖ»úºÅ£º
+mysql:
+https://blog.csdn.net/fengyuyeguirenenen/article/details/124944910?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-124944910-blog-96885235.pc_relevant_multi_platform_whitelistv4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-124944910-blog-96885235.pc_relevant_multi_platform_whitelistv4&utm_relevant_index=2
+
+
+æ‚¨æ˜¯ä¸æ˜¯å› æ‰¾ä¸åˆ°å¯ç”¨çš„å…¶ä»–æ‰‹æœºå·æ¥æ³¨å†Œè€ŒæŠ“ç‹‚å‘¢ï¼Ÿ
+å›½å†…å…è´¹ä¸´æ—¶æ‰‹æœºå·ï¼š
 https://sms.cm
 https://www.pdflibr.com
 https://www.becmd.com
 http://www.smszk.com
 
-¹úÍâÃâ·ÑÁÙÊ±ÊÖ»úºÅ£º
-https://zh.mytrashmobile.com£¨ÖĞÎÄ£©
-https://ch.freephonenum.com£¨ÖĞÎÄ£©
-SMSReceiveFree£ºhttps://smsreceivefree.com
-Receive SMS Online for FREE£ºhttps://www.receive-sms-online.info
-Receive a SMS Online£ºhttps://receive-a-sms.com
-Free SMS Numbers Online£ºhttps://smsnumbersonline.com
-Receive SMS online for Free£ºhttps://sms-online.co/receive-free-sms 
-Receive-SMS£ºhttps://receive-sms.com
-Receive FREE SMS online£ºhttp://receivefreesms.com
-RECEIVE SMS ONLINE£ºhttps://www.receivesmsonline.net
-Free Online Phone£ºhttps://www.freeonlinephone.org
-Receive SMS Online£ºhttp://receive-sms-online.com
-TextNow£ºhttps://www.textnow.com
-Textfree£ºhttps://www.pinger.com/text-free/ 
-SELLAITE£ºhttp://sms.sellaite.com/ 
-Twilio£ºhttps://www.twilio.com/ 
+å›½å¤–å…è´¹ä¸´æ—¶æ‰‹æœºå·ï¼š
+https://zh.mytrashmobile.comï¼ˆä¸­æ–‡ï¼‰
+https://ch.freephonenum.comï¼ˆä¸­æ–‡ï¼‰
+SMSReceiveFreeï¼šhttps://smsreceivefree.com
+Receive SMS Online for FREEï¼šhttps://www.receive-sms-online.info
+Receive a SMS Onlineï¼šhttps://receive-a-sms.com
+Free SMS Numbers Onlineï¼šhttps://smsnumbersonline.com
+Receive SMS online for Freeï¼šhttps://sms-online.co/receive-free-sms 
+Receive-SMSï¼šhttps://receive-sms.com
+Receive FREE SMS onlineï¼šhttp://receivefreesms.com
+RECEIVE SMS ONLINEï¼šhttps://www.receivesmsonline.net
+Free Online Phoneï¼šhttps://www.freeonlinephone.org
+Receive SMS Onlineï¼šhttp://receive-sms-online.com
+TextNowï¼šhttps://www.textnow.com
+Textfreeï¼šhttps://www.pinger.com/text-free/ 
+SELLAITEï¼šhttp://sms.sellaite.com/ 
+Twilioï¼šhttps://www.twilio.com/ 
 https://receive-sms.com/
 http://receive-sms-online.com/
 http://sms.sellaite.com/
