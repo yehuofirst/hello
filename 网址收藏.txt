@@ -7,6 +7,7 @@ https://bbs.huaweicloud.com/blogs/376104
 一文搞定MySQL性能调优：
 https://juejin.cn/post/6844904114250334215
 
+http://www.fanyilun.me/2017/04/20/MySQL%E5%8A%A0%E9%94%81%E5%88%86%E6%9E%90/
 https://www.cnblogs.com/yhq1314/category/1346712.html
 https://www.cnblogs.com/yelbosh/p/5813865.html
 您是不是因找不到可用的其他手机号来注册而抓狂呢？
